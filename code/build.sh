@@ -13,7 +13,7 @@ source venv/bin/activate
 
 # Install dependencies
 echo "Installing dependencies..."
-pip install -r requirements.txt
+pip install -r code/requirements.txt
 
 # Run tests using pytest (optional)
 echo "Running tests..."
