@@ -18,7 +18,7 @@ fi
 
 # Step 2: Install test dependencies (optional, if not already installed)
 echo "Installing test dependencies..."
-pip install -r requirements-test.txt
+pip install -r code/requirements-test.txt
 
 # Step 3: Run tests with pytest
 echo "Running tests with pytest..."
