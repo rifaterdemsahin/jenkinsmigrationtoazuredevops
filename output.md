@@ -5,3 +5,11 @@
 
 # Jenkins with suggested plugins
 <img width="1057" alt="image" src="https://github.com/user-attachments/assets/a1225742-f219-48cc-a924-54ef4bf590b8">
+
+
+# Jenkins Pipeline
+<img width="1699" alt="image" src="https://github.com/user-attachments/assets/dad598ef-99f6-4eca-8e78-4c81eebd74d3">
+
+# Initial Build and Fail
+<img width="1722" alt="image" src="https://github.com/user-attachments/assets/336fe761-2713-4237-8d7c-db29e8b3bec1">
+
