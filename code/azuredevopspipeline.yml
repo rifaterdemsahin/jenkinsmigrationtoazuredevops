@@ -8,6 +8,7 @@ pool:
 
 steps:
 - task: Checkout@1
+  persistCredentials: true
   displayName: 'Checkout code from version control'
   inputs:
     repository: 'https://github.com/rifaterdemsahin/jenkinsmigrationtoazuredevops.git'
