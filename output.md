@@ -51,6 +51,7 @@ http://localhost:8080/job/my/6/console
 <img width="1726" alt="image" src="https://github.com/user-attachments/assets/5f1066fc-2e0c-4852-90c2-571f40a246b3">
 <img width="1363" alt="image" src="https://github.com/user-attachments/assets/de2e8ecf-69ed-4877-8276-bdcf9b6b5ced">
 <img width="1727" alt="image" src="https://github.com/user-attachments/assets/38f77ed9-2596-4638-97af-a7ac311c185c">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/f6f37032-1fb0-4817-8f09-064e0ecb139d">
 
 
 
