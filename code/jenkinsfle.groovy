@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Sample shell command for building the project
-                sh './build.sh'
+                sh 'code/build.sh'
             }
         }
         
         stage('Test') {
             steps {
                 // Sample shell command for running tests
-                sh './run-tests.sh'
+                sh 'code/run-tests.sh'
             }
         }
     }
