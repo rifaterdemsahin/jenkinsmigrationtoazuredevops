@@ -20,6 +20,16 @@ steps:
 
 - script: ./code/build.sh
   displayName: 'Run Build Script'
+  
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install pytest
+  displayName: 'Install pytest'
 
 - script: ./code/run-tests.sh
   displayName: 'Run Test Script'
