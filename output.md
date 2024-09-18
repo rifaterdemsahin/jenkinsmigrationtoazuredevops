@@ -54,14 +54,14 @@ http://localhost:8080/job/my/6/console
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/f6f37032-1fb0-4817-8f09-064e0ecb139d">
 
 
-# Azure DevOps Error
+# Azure DevOps Error and Fix
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/9b4fb610-a056-4b02-88ba-4a9b0cb87c77">
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/9b4fb610-a056-4b02-88ba-4a9b0cb87c77">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/78b92de3-8292-4dc1-b256-d08da794da9e">
 
 
 
 
-
-
+Migration Complete
 
 
