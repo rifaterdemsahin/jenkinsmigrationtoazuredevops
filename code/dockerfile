@@ -4,20 +4,32 @@ FROM jenkins/jenkins:lts
 # Switch to root user to install Python and related packages
 USER root
 
-# Install Python 3, pip, python3-venv, and python3-distutils for creating virtual environments
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip python3-venv python3-distutils
+# Update package lists
+RUN apt-get update
 
-# Upgrade pip using python3 -m pip to avoid potential conflicts
-RUN python3 -m pip install --upgrade pip --break-system-packages
+# Install Python 3
+RUN apt-get install -y python3
 
-# Install Python 3, pip, and pytest globally
-RUN apt-get update 
-RUN apt-get install -y python3 python3-pip build-essential
-RUN pip3 install --upgrade pip pytest
+# Install pip for Python 3
+RUN apt-get install -y python3-pip
+
+# Install python3-venv to create virtual environments
+RUN apt-get install -y python3-venv
+
+# Install python3-distutils for Python package management
+RUN apt-get install -y python3-distutils
+
+# Install build-essential for compiling Python packages
+RUN apt-get install -y build-essential
+
+# Upgrade pip to avoid potential conflicts
+RUN python3 -m pip install --upgrade pip
+
+# Install pytest globally for Python testing
+RUN pip3 install pytest
 
 # Switch back to the Jenkins user
 USER jenkins
 
-# Expose port 8080
+# Expose port 8080 for Jenkins
 EXPOSE 8080
