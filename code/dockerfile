@@ -22,11 +22,17 @@ RUN apt-get install -y python3-distutils
 # Install build-essential for compiling Python packages
 RUN apt-get install -y build-essential
 
-# Install pytest globally for Python testing
-RUN pip3 install pytest
+# Create a virtual environment for Python
+RUN python3 -m venv /opt/venv
+
+# Activate the virtual environment and install pytest
+RUN /opt/venv/bin/pip install pytest
 
 # Switch back to the Jenkins user
 USER jenkins
 
 # Expose port 8080 for Jenkins
 EXPOSE 8080
+
+# Ensure the virtual environment is activated by default
+ENV PATH="/opt/venv/bin:$PATH"
