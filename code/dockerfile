@@ -4,9 +4,9 @@ FROM jenkins/jenkins:lts
 # Switch to root user to install Python and related packages
 USER root
 
-# Install Python 3, pip, and python3-venv for creating virtual environments
+# Install Python 3, pip, python3-venv, and build-essential
 RUN apt-get update && \
-    apt-get install -y python3 python3-pip python3-venv
+    apt-get install -y python3 python3-pip python3-venv build-essential
 
 # Upgrade pip3 to the latest version
 RUN pip3 install --upgrade pip
