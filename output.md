@@ -13,3 +13,7 @@
 # Initial Build and Fail
 <img width="1722" alt="image" src="https://github.com/user-attachments/assets/336fe761-2713-4237-8d7c-db29e8b3bec1">
 
+# Outline Error
+<img width="1508" alt="image" src="https://github.com/user-attachments/assets/ff0a6d67-ce6d-4ad7-8a66-dd501ac5318f">
+
+
