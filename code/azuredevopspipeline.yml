@@ -10,7 +10,7 @@ steps:
 - task: Checkout@1
   displayName: 'Checkout code from version control'
   inputs:
-    repository: 'git@github.com:rifaterdemsahin/jenkinsmigrationtoazuredevops.git'
+    repository: 'self'
     branch: 'main'
 
 - script: |
