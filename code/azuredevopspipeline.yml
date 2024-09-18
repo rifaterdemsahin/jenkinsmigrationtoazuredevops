@@ -13,14 +13,6 @@ steps:
     repository: 'self'
     branch: 'main'
 
-- script: |
-    chmod +x code/build.sh
-    chmod +x code/run-tests.sh
-  displayName: 'Set execute permissions for scripts'
-
-- script: ./code/build.sh
-  displayName: 'Run Build Script'
-  
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.x'
@@ -30,6 +22,14 @@ steps:
     python -m pip install --upgrade pip
     pip install pytest
   displayName: 'Install pytest'
+  
+- script: |
+    chmod +x code/build.sh
+    chmod +x code/run-tests.sh
+  displayName: 'Set execute permissions for scripts'
+
+- script: ./code/build.sh
+  displayName: 'Run Build Script'
 
 - script: ./code/run-tests.sh
   displayName: 'Run Test Script'
