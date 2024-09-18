@@ -21,5 +21,9 @@
 <img width="1721" alt="image" src="https://github.com/user-attachments/assets/c203b11a-b765-4933-a6f0-6fa279743fe1">
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/ca8e6628-050d-4ba9-b2fb-b6e9069b7802">
 
+# Outline Error 3 ( Environment Not Found)
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/f18174eb-653e-4b9e-80a2-04f67c2780f9">
+
+
 
 
