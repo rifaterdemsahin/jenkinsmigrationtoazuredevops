@@ -9,17 +9,25 @@ pipeline {
             }
         }
         
+        stage('Set Permissions') {
+            steps {
+                // Give execute permissions to the build and test scripts
+                sh 'chmod +x code/build.sh'
+                sh 'chmod +x code/run-tests.sh'
+            }
+        }
+
         stage('Build') {
             steps {
-                // Sample shell command for building the project
-                sh 'code/build.sh'
+                // Run the build script
+                sh './code/build.sh'
             }
         }
         
         stage('Test') {
             steps {
-                // Sample shell command for running tests
-                sh 'code/run-tests.sh'
+                // Run the test script
+                sh './code/run-tests.sh'
             }
         }
     }
