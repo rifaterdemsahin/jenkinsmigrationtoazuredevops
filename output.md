@@ -39,6 +39,10 @@
 <img width="1713" alt="image" src="https://github.com/user-attachments/assets/eba2c2a8-8ec3-4722-bdf9-bca050438ada">
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/31528393-0228-4533-a7a7-2a7eaa97a2b9">
 
+# Pull and ReRun
+http://localhost:8080/job/my/6/console
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/af124ce4-83c0-44df-9547-2c4cb8709452">
+<img width="1136" alt="image" src="https://github.com/user-attachments/assets/c625704f-89b5-4ed1-86fc-a10617bb84dc">
 
 
 
