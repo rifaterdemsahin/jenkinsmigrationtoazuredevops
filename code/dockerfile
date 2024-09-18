@@ -22,9 +22,6 @@ RUN apt-get install -y python3-distutils
 # Install build-essential for compiling Python packages
 RUN apt-get install -y build-essential
 
-# Upgrade pip to avoid potential conflicts
-RUN python3 -m pip install --upgrade pip
-
 # Install pytest globally for Python testing
 RUN pip3 install pytest
 
