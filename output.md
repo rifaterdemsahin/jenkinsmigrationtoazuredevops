@@ -24,6 +24,10 @@
 # Outline Error 3 ( Environment Not Found)
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/f18174eb-653e-4b9e-80a2-04f67c2780f9">
 
+# Docker Build with Python
+<img width="1125" alt="image" src="https://github.com/user-attachments/assets/fe019492-9a42-48a3-8b9c-a16213638a6d">
+
+
 
 
 
