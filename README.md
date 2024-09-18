@@ -43,18 +43,60 @@ Now, let's transition that Jenkins pipeline into **Azure DevOps**. Here’s how 
 
 ```yaml
 trigger:
-- main
+  branches:
+    include:
+      - main
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: UseDocker@0
+- task: Checkout@1
+  displayName: 'Checkout code from version control'
   inputs:
-    containerRegistry: 'YourContainerRegistry'
-    repository: 'YourRepo'
-    command: 'build'
-    Dockerfile: 'Dockerfile'
+    repository: 'self'
+    branch: 'main'
+
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install pytest
+  displayName: 'Install pytest'
+  
+- script: |
+    chmod +x code/build.sh
+    chmod +x code/run-tests.sh
+  displayName: 'Set execute permissions for scripts'
+
+- script: ./code/build.sh
+  displayName: 'Run Build Script'
+
+- script: ./code/run-tests.sh
+  displayName: 'Run Test Script'
+
+- task: DeleteFiles@1
+  displayName: 'Clean workspace after build'
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '**/*'
+
+- task: Bash@3
+  condition: succeeded()
+  displayName: 'Notify build and tests succeeded'
+  inputs:
+    targetType: 'inline'
+    script: echo 'Build and tests succeeded.'
+
+- task: Bash@3
+  condition: failed()
+  displayName: 'Notify build failed'
+  inputs:
+    targetType: 'inline'
+    script: echo 'Build failed. Check the logs for details.'
 ```
 
 This pipeline mirrors what we initially had in Jenkins but is now fully integrated with **Azure DevOps**.
