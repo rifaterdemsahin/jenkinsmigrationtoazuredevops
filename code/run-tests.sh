@@ -3,20 +3,30 @@
 # Exit on any error
 set -e
 
-# Print commands
+# Print commands (useful for logging in Jenkins)
 set -x
 
-# Create a virtual environment and activate it
-echo "Setting up virtual environment..."
-python3 -m venv venv
-source venv/bin/activate
+# Step 1: Activate the virtual environment
+# (Ensure the virtual environment was already created in the build process)
+if [ -d "venv" ]; then
+    echo "Activating virtual environment..."
+    source venv/bin/activate
+else
+    echo "Error: Virtual environment not found! Please run the build process first."
+    exit 1
+fi
 
-# Install dependencies
-echo "Installing dependencies..."
-pip install -r requirements.txt
+# Step 2: Install test dependencies (optional, if not already installed)
+echo "Installing test dependencies..."
+pip install -r requirements-test.txt
 
-# Run tests using pytest (optional)
-echo "Running tests..."
-pytest
+# Step 3: Run tests with pytest
+echo "Running tests with pytest..."
+pytest --junitxml=report.xml --cov=./ --cov-report=xml
 
-echo "Build successful!"
+# Step 4: Deactivate the virtual environment
+echo "Deactivating virtual environment..."
+deactivate
+
+# If the tests are successful, print a success message
+echo "All tests passed successfully!"
