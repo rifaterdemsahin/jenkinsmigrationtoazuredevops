@@ -44,6 +44,10 @@ http://localhost:8080/job/my/6/console
 <img width="420" alt="image" src="https://github.com/user-attachments/assets/af124ce4-83c0-44df-9547-2c4cb8709452">
 <img width="1136" alt="image" src="https://github.com/user-attachments/assets/c625704f-89b5-4ed1-86fc-a10617bb84dc">
 
+# Test Pass and Build Pass on Jenkins
+<img width="1723" alt="image" src="https://github.com/user-attachments/assets/a7663b25-d433-4267-81ba-5595708bf859">
+
+
 
 
 
