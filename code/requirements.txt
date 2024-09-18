@@ -1,0 +1,6 @@
+# Example Python dependencies for a project
+Flask==2.0.3          # If using Flask as a web framework
+requests==2.26.0      # For making HTTP requests
+SQLAlchemy==1.4.27    # For database interactions
+
+# Add other project dependencies here
