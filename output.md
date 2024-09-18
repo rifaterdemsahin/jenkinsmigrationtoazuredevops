@@ -3,3 +3,5 @@
 <img width="1006" alt="image" src="https://github.com/user-attachments/assets/387a476e-0f1a-43ed-9e17-7ef7e3c71ad3">
 58baa66afa624e46bddcc9a4ec4d9261
 
+# Jenkins with suggested plugins
+<img width="1057" alt="image" src="https://github.com/user-attachments/assets/a1225742-f219-48cc-a924-54ef4bf590b8">
