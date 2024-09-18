@@ -1,27 +1,22 @@
 #!/bin/bash
 
-# Exit immediately if any command fails
+# Exit on any error
 set -e
 
-# Print all executed commands to the terminal (for logging)
+# Print commands
 set -x
 
-# Step 1: Clean the project (optional but recommended)
-echo "Cleaning project..."
-mvn clean
+# Create a virtual environment and activate it
+echo "Setting up virtual environment..."
+python3 -m venv venv
+source venv/bin/activate
 
-# Step 2: Compile the project
-echo "Compiling project..."
-mvn compile
+# Install dependencies
+echo "Installing dependencies..."
+pip install -r requirements.txt
 
-# Step 3: Package the project (create a JAR or WAR file)
-echo "Packaging project..."
-mvn package
-
-# Step 4: Run additional build steps (if needed)
-# Example: If you need to run tests, you can include them here
+# Run tests using pytest (optional)
 echo "Running tests..."
-mvn test
+pytest
 
-# If the build is successful, print a success message
 echo "Build successful!"
