@@ -27,8 +27,9 @@
 # Docker Build with Python
 <img width="1125" alt="image" src="https://github.com/user-attachments/assets/fe019492-9a42-48a3-8b9c-a16213638a6d">
 
-# Build Virtual Environment Error
+# Build Virtual Environment Error and fix
 <img width="1374" alt="image" src="https://github.com/user-attachments/assets/fb22ea71-c4db-4c0e-b415-8e150ba22545">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/0449506b-5250-4baf-a1b7-ed2af185db47">
 
 
 
