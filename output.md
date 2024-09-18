@@ -31,6 +31,11 @@
 <img width="1374" alt="image" src="https://github.com/user-attachments/assets/fb22ea71-c4db-4c0e-b415-8e150ba22545">
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/0449506b-5250-4baf-a1b7-ed2af185db47">
 
+# Dependency Loading Error 4 and fix
+<img width="1266" alt="image" src="https://github.com/user-attachments/assets/286a8ca5-008b-4834-a2d1-d2dd2754378b">
+<img width="1455" alt="image" src="https://github.com/user-attachments/assets/5a75d765-adc3-42a9-b898-7880c00e0315">
+
+
 
 
 
