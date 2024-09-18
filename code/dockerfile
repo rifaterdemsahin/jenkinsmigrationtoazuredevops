@@ -4,20 +4,15 @@ FROM jenkins/jenkins:lts
 # Switch to root user to install Python and related packages
 USER root
 
-# Install Python 3, pip, and python3-venv for creating virtual environments
+# Install Python 3, pip, python3-venv, and python3-distutils for creating virtual environments
 RUN apt-get update && \
-    apt-get install -y python3 python3-venv python3-distutils
+    apt-get install -y python3 python3-pip python3-venv python3-distutils
 
-# Install pip using get-pip.py instead of the default system installation
-RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
-    python3 get-pip.py && \
-    rm get-pip.py
+# Upgrade pip using python3 -m pip to avoid potential conflicts
+RUN python3 -m pip install --upgrade pip
 
 # Switch back to the Jenkins user
 USER jenkins
 
 # Expose port 8080
 EXPOSE 8080
-
-# Set PATH to include the virtual environment
-ENV PATH="/home/jenkins/venv/bin:$PATH"
